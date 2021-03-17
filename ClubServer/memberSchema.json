@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Members schema",
+    "description": "A schema for members",
+    "type": "object",
+    "properties": {
+        "firstName": {
+            "description": "member firstname",
+            "type": "string",
+            "minLength":1,
+            "maxLength": 20
+        },
+        "lastName": {
+            "description": "member lastname",
+            "type": "string",
+            "minLength":1,
+            "maxLength": 20
+        },
+        "email": {
+            "description": "member emailid",
+            "type": "string",
+            "format": "email"
+        },
+        "role": {
+            "type": "string",
+            "minLength":1,
+            "maxLength":20
+        },
+        "password": {
+            "type": "string",
+            "minLength":1
+        }
+    },
+    "required": ["email", "password", "firstName", "lastName", "role"],
+    "additionalProperties": true
+}
