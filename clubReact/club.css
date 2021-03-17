@@ -1,0 +1,353 @@
+@font-face {
+	font-family: 'ArchitectsDaughter-Regular';
+	src: url('fonts/ArchitectsDaughter-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/ArchitectsDaughter-Regular.woff') format('woff'), url('fonts/ArchitectsDaughter-Regular.ttf') format('truetype'), url('fonts/ArchitectsDaughter-Regular.svg#ArchitectsDaughter-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+h1 {
+	font-family: "ArchitectsDaughter-Regular";
+	font-size: 35px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "ArchitectsDaughter-Regular";
+	font-size: 30px;
+	text-align: center;
+}
+
+p.userInfo {
+	text-align: center;
+	padding-top: 120px;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+main {
+
+	background-color: ghostwhite;
+	padding: 50px;
+	width: 90%;
+	margin: 10px auto 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #d3d3d3;
+    height: 86px;
+}
+
+nav {
+	width: 90%;
+	margin: 40px auto;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+nav li a:hover {
+	background-color: #111;
+}
+
+nav ul,
+main ul {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.activeclass {
+	background-color: #111;
+	display: inline-block;
+}
+
+.membership_form p {
+	text-align: center;
+}
+
+/* Start membership form styling using CSS grid */
+
+.membership_form form {
+	display: grid;
+	background: #f9f9f9;
+	border: 1px solid #c1c1c1;
+	margin: 2rem auto 0 auto;
+	max-width: 600px;
+	padding: 1em;
+}
+
+#signUp {
+	background: lightgrey;
+	padding: 0.7em;
+	width: 100%;
+	border: 0;
+	margin-top: 15px;
+}
+
+#signUp:hover {
+	background: gold;
+}
+
+.membership_form label {
+	padding: 0.5em 0.5em 0.5em 0;
+}
+
+.membership_form input {
+	padding: 0.7em;
+	margin-bottom: 0.5rem;
+}
+
+.membership_form select {
+	padding: 0.7em;
+	margin-bottom: 0.5rem;
+}
+
+.membership_form input:focus {
+	outline: 3px solid gold;
+}
+
+/* End membership form styling using CSS grid */
+
+/* Start Login form styling using CSS grid */
+
+.login_form p {
+	text-align: center;
+}
+
+
+.login_form form {
+	display: grid;
+	background: #f9f9f9;
+	border: 1px solid #c1c1c1;
+	margin: 2rem auto 0 auto;
+	max-width: 600px;
+	padding: 1em;
+}
+
+#login {
+	background: lightgrey;
+	padding: 0.7em;
+	width: 100%;
+	border: 0;
+	margin-top: 15px;
+}
+
+#login:hover {
+	background: gold;
+}
+
+.login_form label {
+	padding: 0.5em 0.5em 0.5em 0;
+}
+
+.login_form input {
+	padding: 0.7em;
+	margin-bottom: 0.5rem;
+}
+
+.login_form input:focus {
+	outline: 3px solid gold;
+}
+
+/* End login form styling using CSS grid */
+
+.field {
+	margin: 1px;
+	padding: 1px;
+}
+
+input:invalid {
+	background-color: #ffdddd;
+}
+
+input:valid {
+	background-color: #ddffdd;
+	border: 2px solid #000;
+}
+
+input:required:invalid {
+	border: 2px solid #f00;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Fallback color */
+	background-color: rgba(6, 12, 222, 0.6);
+	/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #ffd0a0;
+	margin: auto;
+	border: 3px solid blue;
+	width: 40%;
+	padding: 30px;
+}
+
+.modal-content h3 {
+	margin-bottom: 20px;
+}
+
+.dialog-backgrounddialog-background {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+	height: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+/* The Close Button */
+/*.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}*/
+
+.init_tag {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.init_tag p {
+	padding: 6px;
+}
+
+.init_tag figure {
+	max-width: 53%;
+	margin: 40px auto;
+}
+
+.init_tag img {
+	border: solid 2px;
+	border-color: black;
+}
+
+figcaption {
+	display: inline-block;
+	font-style: italic;
+	padding: 2px;
+	text-align: center;
+	max-width: 53%;
+}
+
+figure {
+	display: inline-block;
+}
+
+caption {
+	padding: 10px;
+	caption-side: bottom;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: gainsboro;
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+section.doddle h2 {
+	text-align: center;
+}
+
+section.doddle {
+	background-color: wheat;
+	width: 700px;
+	border: 4px dashed green;
+	margin: 1em;
+	padding: 0.5em;
+}
+
+#myDrawing {
+	cursor: crosshair;
+}
+
+#mysvg {
+	background-color: white;
+	width: 500px;
+	border: 4px solid blue;
+	margin: 20px;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	width: 90%;
+	margin: auto;
+}
